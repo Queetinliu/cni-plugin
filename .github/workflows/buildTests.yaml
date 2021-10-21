@@ -28,7 +28,6 @@ jobs:
           echo "Building for arch $arch"
           ARCH=$arch make build_linux
           file dist/flannel-$arch
-          rm dist/*
         done
 
     - name: build windows
